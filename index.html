@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CherryCobalt Life Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CherryCobalt Life Hub</h1>
+    <nav>
+        <button data-section="food">Food & Nutrition</button>
+        <button data-section="money">Money</button>
+        <button data-section="fitness">Fitness</button>
+        <button data-section="life">Life</button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- FOOD & NUTRITION -->
+    <section id="food" class="content-section">
+        <h2>Food & Nutrition</h2>
+
+        <h3>Grocery List</h3>
+        <div class="checkbox-group" data-group="grocery"></div>
+        <button class="add-btn" onclick="addItem('grocery')">Add Item</button>
+
+        <h3>Meal Planning</h3>
+        <textarea id="meal-planning" class="text-save" data-id="meal-planning"></textarea>
+
+        <h3>Nutrition Log</h3>
+        <textarea id="nutrition-log" class="text-save" data-id="nutrition-log"></textarea>
+
+        <h3>Recipes</h3>
+        <textarea id="recipes" class="text-save" data-id="recipes"></textarea>
+    </section>
+
+    <!-- MONEY -->
+    <section id="money" class="content-section hidden">
+        <h2>Money</h2>
+
+        <h3>Budget</h3>
+        <textarea class="text-save" data-id="budget"></textarea>
+
+        <h3>Savings Goals</h3>
+        <textarea class="text-save" data-id="savings-goals"></textarea>
+
+        <h3>Expense Tracker</h3>
+        <textarea class="text-save" data-id="expense-tracker"></textarea>
+    </section>
+
+    <!-- FITNESS -->
+    <section id="fitness" class="content-section hidden">
+        <h2>Fitness</h2>
+
+        <h3>Gym Workout Log</h3>
+        <textarea class="text-save" data-id="gym-log"></textarea>
+
+        <h3>Running Log</h3>
+        <textarea class="text-save" data-id="running-log"></textarea>
+
+        <h3>Weekly Workout Schedule</h3>
+        <textarea class="text-save" data-id="weekly-workout"></textarea>
+
+        <h3>PR Tracker</h3>
+        <textarea class="text-save" data-id="pr-tracker"></textarea>
+    </section>
+
+    <!-- LIFE -->
+    <section id="life" class="content-section hidden">
+        <h2>Life</h2>
+
+        <h3>Book Log</h3>
+        <textarea class="text-save" data-id="book-log"></textarea>
+
+        <h3>Chore Log</h3>
+        <textarea class="text-save" data-id="chore-log"></textarea>
+
+        <h3>Short-Term Goals (Monthly)</h3>
+        <textarea class="text-save" data-id="monthly-goals"></textarea>
+
+        <h3>Long-Term Goals (Yearly)</h3>
+        <textarea class="text-save" data-id="yearly-goals"></textarea>
+    </section>
+
+</main>
+
+<script src="script.js"></script>  
+</body>
+</html>
